@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Survey Form</title>
+  <link rel="stylesheet" href="index1.css"/>
+</head>
+<body>
+  <div class="container">
+    <form class="survey-form">
+      <h2>Survey Form</h2>
+      <p class="subtitle">User stories survey form</p>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter Name" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Enter E-Mail" required />
+
+      <label for="experience">Work Experience:</label>
+      <input type="number" id="experience" placeholder="Enter Number" required />
+
+      <label for="investing">Are you comfortable in investing in real estate on platform without first investigating properly:</label>
+      <select id="investing">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Not Sure</option>
+      </select>
+
+      <label for="suggestions">Suggestions to build trusted platform:</label>
+      <textarea id="suggestions" rows="2" placeholder="Your Suggestions..."></textarea>
+
+      <p>You are ready to invest in:</p>
+      <label><input type="checkbox" /> Real Estate</label>
+      <label><input type="checkbox" /> Mutual Funds</label>
+      <label><input type="checkbox" /> Crypto Currency</label>
+      <label><input type="checkbox" /> Stocks & Bonds</label>
+
+      <p>Are you ready for further contact?</p>
+      <label><input type="radio" name="contact" /> Yes</label>
+      <label><input type="radio" name="contact" /> No</label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="index1.js"></script>
+</body>
+</html>
